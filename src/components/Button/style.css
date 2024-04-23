@@ -1,0 +1,16 @@
+.buttonComponent {
+    background-color: #06abf7;
+    border-radius: 1em;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    margin: 1em 0;
+}
+
+.buttonComponent:hover {
+    background-color: rgb(40, 85, 221);
+    color:#FFF
+}
