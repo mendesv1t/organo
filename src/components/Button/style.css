@@ -1,16 +1,16 @@
 .buttonComponent {
-    background-color: #06abf7;
+    background-color: #9283ED;
     border-radius: 1em;
     font-weight: 700;
     font-size: 1em;
     padding: 1em;
     border: none;
     cursor: pointer;
-    color: #FFF;
+    color: rgb(0, 0, 0);
     margin: 1em 0;
 }
 
 .buttonComponent:hover {
-    background-color: rgb(40, 85, 221);
-    color:#FFF
+    background-color:#68689a;
+    color:rgb(255, 255, 255)
 }

@@ -1,11 +1,12 @@
 .banner {
-    background-color: #06abf7;
+    background-color: #ffffff;
     min-width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .banner img {
-    width: 1000px;
+    width: auto;
     max-height: 30vh;
+    min-width: 10vh;
 }
