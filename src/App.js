@@ -43,8 +43,9 @@ function App() {
   return (
     <div className="App">
      <Banner/>
-     <Form cadastrarPet={model => 
-          adicionarPet(model)} especies = {especies.map(especie => especie.nome)}
+     <Form 
+     especies = {especies.map(especie => especie.nome)}
+     cadastrarPet= {model => adicionarPet(model)} 
       />
      {especies.map(
       especie => 
@@ -53,7 +54,7 @@ function App() {
         nome={especie.nome}
         corPrimaria={especie.corPrimaria}
         corSecundaria={especie.corSecundaria}
-        pets={pets.filter(pet => pet.especie === especie.nome)}
+        petsList={pets.filter(pet => pet.especie === especie.nome)}
       />
      )}
      <Footer/>

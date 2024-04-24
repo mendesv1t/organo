@@ -1,9 +1,9 @@
 import './style.css'
 const DropDown = (props) => {
     return (
-        <div>
+        <div className='drop-down'>
             <label className="label">{props.label}</label>
-            <select className="dropdown">
+            <select className="dropdown" onChange={event => props.valorAlterado(event.target.value)} required={props.required} value={props.valor}>
                 {props.items.map(item => 
                     <option  key={item}>
                        {item}

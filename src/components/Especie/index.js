@@ -6,12 +6,12 @@ const Especie = (props) => {
         <section className='especie' style={{backgroundColor: props.corSecundaria}}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='pets'>
-            {props.pets.map(
+            {props.petsList.map(
                 pet => 
                 <Pet
+                key={pet.nome}
                 nome={pet.nome}
-                especie={props.nome}
-                imagem={props.imagem}
+                especie={pet.especie}
                 />
             )}
             </div>

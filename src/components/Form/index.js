@@ -13,13 +13,18 @@ const Form = (props) => {
 
 
     const salvar = (event) => {
-        event.preventDefault()
+            event.preventDefault()
+            console.log(nome, imagem, bio, especie);
         props.cadastrarPet({
             nome,
             imagem,
             bio,
             especie
         })
+        setNome('');
+        setImagem('');
+        setEspecie('');
+        setBio('');
     }
 
     return (

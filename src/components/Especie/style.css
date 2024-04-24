@@ -1,6 +1,6 @@
 .especie {
     text-align: center;
-    padding: 2em;
+    padding: 32px;
     background-color: #b9ead3;
 }
 
@@ -8,12 +8,12 @@
     font-size: 32px;
     border-bottom: 4px solid;
     display: inline-block;
-    padding-bottom: 1em;
+    padding-bottom: 8px;
 }
 
 .especie .pets {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 32px;
     flex-wrap: wrap;
 }
