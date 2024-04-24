@@ -9,7 +9,7 @@ const Form = (props) => {
     const [nome, setNome] = useState('');
     const [imagem, setImagem] = useState('');
     const [bio, setBio] = useState('');
-    const [especie, setEspecie] = useState('');
+    const [especie, setEspecie] = useState(props.especies[0]);
 
 
     const salvar = (event) => {
