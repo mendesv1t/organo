@@ -1,14 +1,15 @@
 import './style.css'
 
-const Pet = (props) => {
+const Pet = ({nome, imagem, especie, bio}) => {
     return (
         <div className='pet'>
             <div className='cabecalho'>
-                <img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgByBT5IiAT_a2x9pUVb4VMoOrlzHH7Jrzj-HB5jzHlR4lNLMS' alt={props.nome}/>
+                <img src={imagem} alt={nome}/>
             </div>
             <div className='rodape'>
-                <h4>{props.nome}</h4>
-                <h5>{props.especie}</h5>
+                <h4>{nome}</h4>
+                <h5>{especie}</h5>
+                <h5>{bio}</h5>
             </div>
         </div>
     )

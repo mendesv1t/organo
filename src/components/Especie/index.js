@@ -12,6 +12,8 @@ const Especie = (props) => {
                 key={pet.nome}
                 nome={pet.nome}
                 especie={pet.especie}
+                imagem={pet.imagem}
+                bio={pet.bio}
                 />
             )}
             </div>

@@ -13,14 +13,14 @@ function App() {
     corSecundaria: '#d9f7e9'
     },
     {
-      nome: 'Ave',
-      corPrimaria: '#B2CFFA',
-      corSecundaria: '#E8F8FF'
-    },
-    {
       nome: 'Gato',
       corPrimaria: '#E06B69',
       corSecundaria: '#FDE7E8'
+    },
+    {
+      nome: 'Ave',
+      corPrimaria: '#B2CFFA',
+      corSecundaria: '#E8F8FF'
     },
     {
       nome: 'Roedor',

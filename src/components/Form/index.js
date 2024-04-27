@@ -4,13 +4,19 @@ import Button from '../Button'
 import {useState} from 'react'
 
 import './style.css'
+import InputFile from '../InputFile'
 const Form = (props) => {
 
     const [nome, setNome] = useState('');
     const [imagem, setImagem] = useState('');
     const [bio, setBio] = useState('');
     const [especie, setEspecie] = useState(props.especies[0]);
-
+        
+    const onImageChange = (event) => {
+        if (event.target.files && event.target.files[0]) {
+            setImagem(URL.createObjectURL(event.target.files[0]));
+        }
+    }
 
     const salvar = (event) => {
             event.preventDefault()
@@ -22,9 +28,11 @@ const Form = (props) => {
             especie
         })
         setNome('');
-        setImagem('');
-        setEspecie('');
+        // espécie default
+        setEspecie('Cachorro');
+        setImagem(null);
         setBio('');
+
     }
 
     return (
@@ -38,12 +46,10 @@ const Form = (props) => {
                 valor={nome}
                 valorAlterado={valor => setNome(valor)}
             />
-            <TextField 
-                required={true} 
-                label="Imagem" 
-                placeholder="Digite o endereço da Imagem"
-                valor={imagem}
-                valorAlterado={valor => setImagem(valor)}
+            <InputFile
+            label="Imagem"
+            required={true}
+            onChange={onImageChange}
             />
             <TextField 
                 required={false}
