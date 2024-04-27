@@ -19,8 +19,7 @@ const Form = (props) => {
     }
 
     const salvar = (event) => {
-            event.preventDefault()
-            console.log(nome, imagem, bio, especie);
+        event.preventDefault()
         props.cadastrarPet({
             nome,
             imagem,
@@ -29,7 +28,7 @@ const Form = (props) => {
         })
         setNome('');
         // espécie default
-        setEspecie('Cachorro');
+        setEspecie('');
         setImagem(null);
         setBio('');
 

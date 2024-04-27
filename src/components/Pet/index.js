@@ -1,9 +1,9 @@
 import './style.css'
 
-const Pet = ({nome, imagem, especie, bio}) => {
+const Pet = ({nome, imagem, especie, bio, corDeFundo}) => {
     return (
         <div className='pet'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={{backgroundColor: corDeFundo}}>
                 <img src={imagem} alt={nome}/>
             </div>
             <div className='rodape'>
