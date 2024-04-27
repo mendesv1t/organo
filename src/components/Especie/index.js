@@ -2,6 +2,7 @@ import './style.css'
 import Pet from '../Pet'
 
 const Especie = (props) => {
+    if (props.petsList.length !== 0) {
     return (
             <section className='especie' style={{backgroundColor: props.corSecundaria}}>
                 <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
@@ -20,6 +21,7 @@ const Especie = (props) => {
                 </div>
             </section>
     )
+                }
 }
 
 export default Especie
